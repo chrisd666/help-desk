@@ -4,8 +4,8 @@ import TweetItem from "../tweetItem/TweetItem";
 export default function Tweets({ isLoading, selectedTweet, replies }) {
   return (
     <div style={{
-      //  height: "70vh",
-       overflow: "auto", margin: 20, height: '100%' }}>
+       overflow: "auto", margin: 20, height: '100%'
+    }}>
       <div>
         {isLoading ? (
           '...'

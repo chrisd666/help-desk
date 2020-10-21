@@ -3,7 +3,10 @@ import MentionItem from '../mentionItem/MentionItem';
 
 const Mentions = ({ isLoading, tweets, selectedIndex, handleReply, handleSelected }) => {
   return (
-    <div style={{ height: "92vh", overflow: "scroll" }}>
+    <div style={{
+      // height: "92vh",
+      height: "75vh",
+      overflow: "auto" }}>
       <div
         style={{
           display: "flex",

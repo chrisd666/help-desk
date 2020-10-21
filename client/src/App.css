@@ -1,0 +1,4 @@
+.online-button .dropdown-toggle::after {
+  margin-right: 20px;
+  margin-left: 5px;
+}

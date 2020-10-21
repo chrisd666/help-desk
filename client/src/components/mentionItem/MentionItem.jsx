@@ -5,8 +5,8 @@ import { Card, CardBody, Col, Row } from "shards-react";
 const MentionItem = ({ tweet, handleReply, selectedIndex, handleSelected }) => {
   return (
       <Card
-        className="mx-3 my-2 border rounded"
-        style={selectedIndex === tweet.id_str ? {'background-color': '#f0edeb'} : {'background-color': '#fff'}}
+        className="mx-3 my-2 border rounded shadow-none"
+        style={selectedIndex === tweet.id_str ? {backgroundColor: '#f0edeb'} : {backgroundColor: '#fff'}}
       >
         <CardBody className="p-3">
           <div
@@ -19,11 +19,11 @@ const MentionItem = ({ tweet, handleReply, selectedIndex, handleSelected }) => {
             <Row>
               <Col lg="2">
                   <img
-                  style={{width: 30, height: 30}}
-                  className="rounded-circle border"
-                  src={tweet.user.profile_image_url}
-                  alt={tweet.user.name}
-                />
+                    style={{width: 30, height: 30}}
+                    className="rounded-circle border"
+                    src={tweet.user.profile_image_url}
+                    alt={tweet.user.name}
+                  />
               </Col>
 
               <Col lg="8">
@@ -36,7 +36,7 @@ const MentionItem = ({ tweet, handleReply, selectedIndex, handleSelected }) => {
                         fontSize: "0.8em"
                       }}
                     >
-                      {moment(tweet.created_at).fromNow()}
+                      {/* {moment(tweet.created_at).fromNow()} */}
                     </span>
                   </b>
                   <p>
